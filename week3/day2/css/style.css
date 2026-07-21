@@ -1,0 +1,55 @@
+h1 {
+    text-align: center;
+    color: brown;
+    background-color: rgb(194, 246, 151);
+    font-family: Helvetica;
+    border: 10px solid #85e7e1;
+}
+
+img {
+    width: 250px;
+}
+
+body {
+    font-size: 20px;
+}
+
+div {
+    background-color: teal;
+    text-align: center;
+}
+
+h2, h3 {
+    color: white;
+}
+
+ul {
+    color: purple;
+    background: rgb(150, 150, 150);
+    text-decoration: underline;
+}
+
+p {
+    color: orange;
+}
+
+#water {
+    color: blue;
+}
+
+.special {
+    background-color: black;
+    color: blue;
+}
+
+.big_font {
+    font-size: 50px;
+
+}
+
+div p {
+    font-size: 200%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-decoration: overline underline;
+}
