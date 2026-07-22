@@ -1,0 +1,38 @@
+body {
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  width: 200px;
+}
+
+div {
+    border: 5px solid black;
+    margin: 50px;
+}
+
+#one {
+    background-color: aqua;
+    justify-content: center;
+}
+
+#two {
+    background-color: greenyellow;
+    justify-content: flex-start;
+}
+
+#three {
+    background-color: rebeccapurple;
+    justify-content: flex-end;
+}
+
+#four {
+    background-color: gold;
+    justify-content:space-between;
+}
