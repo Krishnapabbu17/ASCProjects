@@ -1,10 +1,8 @@
-// Get references to the buttons and divs
 let paragraphButton = document.getElementById('p-button');
 let imageButton = document.getElementById('img-button');
 let paragraphDiv = document.getElementById('p-div');
 let imageDiv = document.getElementById('img-div');
 
-// Show the paragraph div and add a new paragraph
 paragraphButton.onclick = function(){
     paragraphDiv.style.display = 'block';
     imageDiv.style.display = 'none';
@@ -15,7 +13,6 @@ paragraphButton.onclick = function(){
     paragraphDiv.appendChild(newParagraph);
 }
 
-// Show the image div and add a new image
 imageButton.onclick = function(){
     imageDiv.style.display = 'block';
     paragraphDiv.style.display = 'none';
