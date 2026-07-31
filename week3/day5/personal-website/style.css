@@ -167,6 +167,8 @@ section {
 .project-card a {
     color: #0369a1;
     font-weight: bold;
+    display: block;
+    margin-top: 15px;
 }
 
 .interest-card {
@@ -194,6 +196,64 @@ footer {
     color: white;
     text-align: center;
     padding: 18px;
+}
+
+#theme-button,
+.learn-more-button {
+    background-color: #38bdf8;
+    color: #172554;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#theme-button:hover,
+.learn-more-button:hover {
+    background-color: white;
+}
+
+.extra-info {
+    display: none;
+    background-color: #e0f2fe;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.dark-mode {
+    background-color: #111827;
+    color: white;
+}
+
+.dark-mode .hero {
+    background-color: #1e293b;
+}
+
+.dark-mode #about,
+.dark-mode #interests {
+    background-color: #111827;
+}
+
+.dark-mode #projects {
+    background-color: #0f172a;
+}
+
+.dark-mode .about-card,
+.dark-mode .project-card,
+.dark-mode .interest-card {
+    background-color: #334155;
+    color: white;
+}
+
+.dark-mode h1,
+.dark-mode .section-title,
+.dark-mode .hero h2 {
+    color: white;
+}
+
+.dark-mode .extra-info {
+    background-color: #475569;
 }
 
 @media (max-width: 800px) {
