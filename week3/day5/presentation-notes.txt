@@ -1,0 +1,22 @@
+PERSONAL WEBSITE PRESENTATION NOTES
+
+Opening
+Hi, my name is Krishna Pabbu, and this is my personal website.
+
+1. What is the theme of your personal website?
+The theme is my growth as a student, researcher, and programmer. I used blue colors because they create a clean technology-focused look. The website introduces me and highlights my main interests and projects.
+
+2. What should you show during the presentation?
+First, show the navigation bar and click one of the links to demonstrate that it moves to a section of the page. Then show the About Me section, the project cards, and the GitHub link. Resize the browser briefly to show that the layout works on smaller screens.
+
+3. How do you plan to use your website outside of All Star Code?
+I can use it as a portfolio for college applications, internships, research opportunities, and future coding programs. I can keep adding new projects and accomplishments as I complete them.
+
+4. What was the toughest challenge?
+The toughest challenge was arranging the sections so they looked organized on both large and small screens. I handled it by using Flexbox, flex-wrap, and a media query that changes the layout when the screen becomes smaller.
+
+5. What did you enjoy most in Week 3?
+I enjoyed learning how HTML and CSS work together to turn basic information into a real website. Flexbox was especially useful because it made it easier to organize the navigation bar, project cards, and other sections.
+
+Closing
+This project helped me combine what I learned during Week 3 into a website that I can continue using after All Star Code.
