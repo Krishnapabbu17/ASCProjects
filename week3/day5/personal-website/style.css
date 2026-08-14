@@ -216,6 +216,7 @@ h1 {
     border: 9px solid var(--surface);
     border-radius: 45% 55% 48% 52% / 52% 44% 56% 48%;
     object-fit: cover;
+    object-position: center 22%;
     box-shadow: var(--shadow);
 }
 
@@ -312,7 +313,7 @@ blockquote { margin: 20px 0; color: var(--heading); font-size: clamp(1.35rem, 2.
     margin-top: 32px;
     border: 1px solid var(--border);
     border-radius: var(--radius-large);
-    background: var(--heading);
+    background: #0f172a;
     color: #e5edf8;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -323,6 +324,12 @@ blockquote { margin: 20px 0; color: var(--heading); font-size: clamp(1.35rem, 2.
 .experience-strip div + div { border-left: 1px solid rgba(255, 255, 255, 0.16); }
 .experience-strip span { color: #93c5fd; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
 .experience-strip p { margin: 10px 0 0; }
+
+body.dark-mode .experience-strip {
+    border-color: #334155;
+    background: #111827;
+    color: #e5edf8;
+}
 
 .contact-section {
     max-width: var(--max-width);
