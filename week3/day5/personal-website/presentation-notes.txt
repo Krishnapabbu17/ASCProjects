@@ -1,22 +1,48 @@
 PERSONAL WEBSITE PRESENTATION NOTES
 
-Opening
-Hi, my name is Krishna Pabbu, and this is my personal website.
+Goal: about 2 to 3 minutes. Do not memorize every word. Keep the website open and use each section as your reminder.
 
-1. What is the theme of your personal website?
-The theme is my growth as a student, researcher, and programmer. I used blue colors because they create a clean technology-focused look. The website introduces me and highlights my main interests and projects.
+BEFORE RECORDING
+- Open the public GitHub Pages link in a clean browser tab.
+- Close notifications and unrelated tabs.
+- Check that your camera and microphone are on.
+- Keep this outline nearby, but look at the camera during the introduction and closing.
 
-2. What should you show during the presentation?
-First, show the navigation bar and click one of the links to demonstrate that it moves to a section of the page. Then show the About Me section, the project cards, and the GitHub link. Resize the browser briefly to show that the layout works on smaller screens.
+OPENING (camera + homepage)
+Hi, my name is Krishna Pabbu, and this is my personal portfolio website. I built it with HTML, CSS, and JavaScript to introduce myself and highlight some of my research, data science, and programming projects.
 
-3. How do you plan to use your website outside of All Star Code?
-I can use it as a portfolio for college applications, internships, research opportunities, and future coding programs. I can keep adding new projects and accomplishments as I complete them.
+HOMEPAGE
+The homepage quickly explains who I am and what I am interested in. I used a clean blue design because it connects to technology and research while still being easy to read. I also included a few numbers that summarize my work, such as analyzing about 54,000 diamonds and reaching roughly 95 percent accuracy with my best classification model.
 
-4. What was the toughest challenge?
-The toughest challenge was arranging the sections so they looked organized on both large and small screens. I handled it by using Flexbox, flex-wrap, and a media query that changes the layout when the screen becomes smaller.
+ABOUT SECTION
+In the About section, I explain that I am a high school student interested in artificial intelligence, machine learning, data science, and natural language processing. I also included some of my leadership and personal interests so the website shows more than just my technical work.
 
-5. What did you enjoy most in Week 3?
-I enjoyed learning how HTML and CSS work together to turn basic information into a real website. Flexbox was especially useful because it made it easier to organize the navigation bar, project cards, and other sections.
+PROJECTS SECTION
+The Projects section is the main part of the website. It includes my autism language research, diamond cut classifier, What’s On My Ballot mobile app, and motor fault detection project.
 
-Closing
-This project helped me combine what I learned during Week 3 into a website that I can continue using after All Star Code.
+[Click "Project details" on one card.]
+
+Each card has a JavaScript button that reveals more information. Some projects also link directly to their GitHub repositories.
+
+SKILLS SECTION
+The Skills section groups the tools I have used into programming languages, data and machine learning, and software development. The page is also responsive, so the layout changes to fit phones and smaller screens.
+
+INTERACTIONS
+[Click the dark mode button.]
+
+I used JavaScript to create dark mode and save the user's preference. I also used JavaScript for the project detail buttons and the current year in the footer.
+
+CHALLENGE
+One challenge was keeping the website organized and readable on different screen sizes. I solved that with CSS Grid, Flexbox, responsive media queries, and reusable color variables for both light and dark mode.
+
+CLOSING (look at camera)
+This project brings together what I learned about HTML, CSS, responsive design, and DOM interactions. I can continue updating it for future programs, research opportunities, internships, and college applications. Thank you for watching.
+
+QUICK RECORDING ORDER
+1. Introduce yourself on the homepage.
+2. Scroll to About.
+3. Show the four project cards.
+4. Open one "Project details" panel.
+5. Show Skills.
+6. Toggle dark mode.
+7. End on the Contact section or return to the homepage.

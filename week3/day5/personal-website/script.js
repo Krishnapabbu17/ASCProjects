@@ -1,36 +1,30 @@
-let themeButton = document.getElementById("theme-button");
-let body = document.querySelector("body");
+const themeButton = document.getElementById("theme-button");
+const body = document.body;
 
-themeButton.onclick = function()
-{
-    body.classList.toggle("dark-mode");
-
-    if (body.classList.contains("dark-mode"))
-    {
-        themeButton.innerHTML = "Light Mode";
-    }
-    else
-    {
-        themeButton.innerHTML = "Dark Mode";
-    }
-};
-
-let learnMoreButtons = document.getElementsByClassName("learn-more-button");
-let extraInformation = document.getElementsByClassName("extra-info");
-
-for (let i = 0; i < learnMoreButtons.length; i++)
-{
-    learnMoreButtons[i].onclick = function()
-    {
-        if (extraInformation[i].style.display == "block")
-        {
-            extraInformation[i].style.display = "none";
-            learnMoreButtons[i].innerHTML = "Learn More";
-        }
-        else
-        {
-            extraInformation[i].style.display = "block";
-            learnMoreButtons[i].innerHTML = "Show Less";
-        }
-    };
+function setTheme(theme) {
+    const isDark = theme === "dark";
+    body.classList.toggle("dark-mode", isDark);
+    themeButton.setAttribute("aria-pressed", String(isDark));
+    themeButton.textContent = isDark ? "Light mode" : "Dark mode";
 }
+
+const savedTheme = localStorage.getItem("portfolio-theme");
+setTheme(savedTheme || "light");
+
+themeButton.addEventListener("click", function () {
+    const nextTheme = body.classList.contains("dark-mode") ? "light" : "dark";
+    setTheme(nextTheme);
+    localStorage.setItem("portfolio-theme", nextTheme);
+});
+
+document.querySelectorAll(".details-button").forEach(function (button) {
+    button.addEventListener("click", function () {
+        const detailPanel = document.getElementById(button.getAttribute("aria-controls"));
+        const isOpen = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", String(!isOpen));
+        button.textContent = isOpen ? "Project details" : "Hide details";
+        detailPanel.hidden = isOpen;
+    });
+});
+
+document.getElementById("current-year").textContent = new Date().getFullYear();

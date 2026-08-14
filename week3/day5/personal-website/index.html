@@ -3,160 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krishna Pabbu | Personal Website</title>
+    <meta name="description" content="Krishna Pabbu is a high school student exploring artificial intelligence, data science, research, and civic technology.">
+    <title>Krishna Pabbu | Student Researcher &amp; Programmer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <nav>
-        <div class="logo">KP</div>
-
+    <nav class="site-nav" aria-label="Main navigation">
+        <a class="logo" href="#top" aria-label="Krishna Pabbu home">KP</a>
         <div class="nav-links">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="#interests">Interests</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
         </div>
-
-        <button id="theme-button">Dark Mode</button>
+        <button id="theme-button" class="theme-button" type="button" aria-pressed="false">Dark mode</button>
     </nav>
 
-    <header class="hero">
-        <div class="hero-text">
-            <p class="intro">Hello, my name is</p>
+    <header class="hero" id="top">
+        <div class="hero-content">
+            <p class="eyebrow">High school student · Class of 2027</p>
             <h1>Krishna Pabbu</h1>
-            <h2>Student, researcher, and programmer</h2>
-            <p>
-                I enjoy using computer science and data science to study real problems,
-                build projects, and learn new skills.
-            </p>
-            <a class="button" href="#projects">View My Projects</a>
+            <h2>I turn questions into data-driven projects.</h2>
+            <p class="hero-description">I explore artificial intelligence, machine learning, and software development through research and projects designed around real problems.</p>
+            <div class="hero-actions">
+                <a class="button button-primary" href="#projects">Explore my work</a>
+                <a class="button button-secondary" href="https://github.com/Krishnapabbu17" target="_blank" rel="noopener noreferrer">Visit GitHub</a>
+            </div>
+            <ul class="quick-stats" aria-label="Portfolio highlights">
+                <li><strong>54K</strong><span>diamonds analyzed</span></li>
+                <li><strong>95%</strong><span>top model accuracy</span></li>
+                <li><strong>4</strong><span>project areas</span></li>
+            </ul>
         </div>
-
-        <img
-            class="profile-image"
-            src="https://avatars.githubusercontent.com/u/178414362?v=4"
-            alt="Krishna Pabbu's GitHub profile image"
-        >
+        <div class="portrait-wrap">
+            <div class="portrait-accent" aria-hidden="true"></div>
+            <img class="profile-image" src="https://avatars.githubusercontent.com/u/178414362?v=4" alt="Krishna Pabbu" width="360" height="360">
+            <p class="portrait-note">Research · Build · Learn</p>
+        </div>
     </header>
 
-    <main>
-        <section id="about">
-            <h2 class="section-title">About Me</h2>
-
-            <div class="about-container">
-                <div class="about-card">
-                    <h3>Who I Am</h3>
-                    <p>
-                        I am a high school student in the Class of 2027. I am interested
-                        in computer science, data science, artificial intelligence, and research.
-                    </p>
+    <main id="main-content">
+        <section class="section" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">About me</p>
+                <h2>Curious about how technology can make information useful.</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-copy">
+                    <p>I am a high school student interested in artificial intelligence, machine learning, data science, and natural language processing. I enjoy moving from an idea to a real project: asking a question, organizing data, testing an approach, and explaining what I learned.</p>
+                    <p>Outside of coding, I participate in leadership and service through FBLA, NHS, tutoring, and community projects. I also enjoy chess, playing the flute, dance, and spending time with friends.</p>
                 </div>
-
-                <div class="about-card">
-                    <h3>What I Do</h3>
-                    <p>
-                        I build coding projects, compete in business and technology events,
-                        tutor students, play chess, and explore how technology can solve problems.
-                    </p>
+                <div class="focus-card">
+                    <p class="card-label">What drives me</p>
+                    <blockquote>“Build with curiosity, test with evidence, and make the result useful.”</blockquote>
+                    <p>My goal is to keep growing as a researcher and programmer while applying technology to meaningful problems.</p>
                 </div>
             </div>
         </section>
 
-        <section id="projects">
-            <h2 class="section-title">Featured Projects</h2>
+        <section class="section section-tinted" id="projects">
+            <div class="section-heading section-heading-row">
+                <div>
+                    <p class="eyebrow">Featured work</p>
+                    <h2>Projects built from real questions.</h2>
+                </div>
+                <p class="section-intro">Each project helped me practice a different part of the process—from research and data analysis to mobile development and hardware.</p>
+            </div>
 
-            <div class="project-container">
-                <div class="project-card">
+            <div class="project-grid">
+                <article class="project-card featured-card">
+                    <div class="project-topline"><span class="project-number">01</span><span class="tag">NLP research</span></div>
                     <h3>Autism Language Research</h3>
-                    <p>
-                        I studied whether linguistic and Zipfian features could help a neural
-                        network detect autism from child language samples.
-                    </p>
-                    <button class="learn-more-button">Learn More</button>
-                    <p class="extra-info">
-                        I worked with language samples from ASDBank and trained a neural network
-                        using linguistic and Zipfian features. My research paper was published in
-                        the American Journal of Student Research.
-                    </p>
-                    <a href="https://ajosr.org/jr-current_issue/" target="_blank">View the journal</a>
-                </div>
+                    <p>Explored whether linguistic features and patterns related to Zipf’s Law could help distinguish ASD and typically developing language samples.</p>
+                    <ul class="project-tech" aria-label="Technologies used"><li>Python</li><li>TensorFlow</li><li>scikit-learn</li></ul>
+                    <div class="project-actions">
+                        <button class="details-button" type="button" aria-expanded="false" aria-controls="research-details">Project details</button>
+                        <a href="https://github.com/Krishnapabbu17/ASD_Project" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <div class="project-details" id="research-details" hidden><p>Conducted through the Lumiere Education AI Research Program. I cleaned language data, engineered lexical and Zipfian features, built a neural network classifier, and compared it with baseline models.</p></div>
+                </article>
 
-                <div class="project-card">
+                <article class="project-card">
+                    <div class="project-topline"><span class="project-number">02</span><span class="tag">Data science</span></div>
                     <h3>Diamond Cut Classifier</h3>
-                    <p>
-                        I used Random Forest and XGBoost models to classify diamond cuts.
-                    </p>
-                    <button class="learn-more-button">Learn More</button>
-                    <p class="extra-info">
-                        I cleaned a dataset of more than 50,000 diamonds, selected useful features,
-                        trained two machine-learning models, and compared their accuracy, recall,
-                        precision, and F1 scores.
-                    </p>
-                </div>
+                    <p>Used measurable diamond features to compare Random Forest and XGBoost models for classifying cut quality.</p>
+                    <ul class="project-tech" aria-label="Technologies used"><li>pandas</li><li>XGBoost</li><li>Matplotlib</li></ul>
+                    <div class="project-actions">
+                        <button class="details-button" type="button" aria-expanded="false" aria-controls="diamond-details">Project details</button>
+                        <a href="https://github.com/Krishnapabbu17/diamonds-analysis" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <div class="project-details" id="diamond-details" hidden><p>Cleaned and analyzed 53,940 rows, tested feature relationships, handled class imbalance, and reached about 95.1% accuracy with XGBoost.</p></div>
+                </article>
 
-                <div class="project-card">
+                <article class="project-card">
+                    <div class="project-topline"><span class="project-number">03</span><span class="tag">Civic tech</span></div>
+                    <h3>What’s On My Ballot</h3>
+                    <p>Developed a mobile application that organized election and ballot data in a clearer, more accessible interface.</p>
+                    <ul class="project-tech" aria-label="Technologies used"><li>React Native</li><li>Data organization</li><li>UX design</li></ul>
+                    <div class="project-actions"><button class="details-button" type="button" aria-expanded="false" aria-controls="ballot-details">Project details</button></div>
+                    <div class="project-details" id="ballot-details" hidden><p>Integrated spreadsheet-based election information into an app and focused on usability, navigation, and information clarity.</p></div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-topline"><span class="project-number">04</span><span class="tag">Hardware + ML</span></div>
                     <h3>Motor Fault Detection</h3>
-                    <p>
-                        My teammate and I are building a low-cost vibration monitoring system.
-                    </p>
-                    <button class="learn-more-button">Learn More</button>
-                    <p class="extra-info">
-                        We use an Arduino, an MPU6050 accelerometer, and machine learning to detect
-                        motor imbalance from vibration data. I am responsible for data processing
-                        and the machine-learning side of the project.
-                    </p>
-                </div>
-
-                <div class="project-card">
-                    <h3>All Star Code Projects</h3>
-                    <p>
-                        I created websites, JavaScript programs, p5.js games, and other projects.
-                    </p>
-                    <button class="learn-more-button">Learn More</button>
-                    <p class="extra-info">
-                        Through All Star Code, I learned HTML, CSS, Flexbox, responsive design,
-                        JavaScript, DOM manipulation, events, Git, and GitHub.
-                    </p>
-                    <a href="https://github.com/Krishnapabbu17/ASCProjects" target="_blank">View the repository</a>
-                </div>
+                    <p>Building a low-cost monitoring system that uses vibration data and machine learning to identify motor imbalance.</p>
+                    <ul class="project-tech" aria-label="Technologies used"><li>Arduino</li><li>MPU6050</li><li>Machine learning</li></ul>
+                    <div class="project-actions"><button class="details-button" type="button" aria-expanded="false" aria-controls="motor-details">Project details</button></div>
+                    <div class="project-details" id="motor-details" hidden><p>My role focuses on processing accelerometer data and developing the machine-learning workflow while collaborating on hardware testing.</p></div>
+                </article>
             </div>
         </section>
 
-        <section id="interests">
-            <h2 class="section-title">My Interests</h2>
-
-            <div class="interest-container">
-                <div class="interest-card">
-                    <h3>Technology</h3>
-                    <p>Computer science, data science, machine learning, and engineering.</p>
-                </div>
-
-                <div class="interest-card">
-                    <h3>Leadership</h3>
-                    <p>Coding Club, FBLA, NHS, tutoring, and community projects.</p>
-                </div>
-
-                <div class="interest-card">
-                    <h3>Outside School</h3>
-                    <p>Chess, playing the flute, dance, and spending time with friends.</p>
-                </div>
+        <section class="section" id="skills">
+            <div class="section-heading"><p class="eyebrow">Skills and interests</p><h2>A toolkit that keeps growing.</h2></div>
+            <div class="skills-layout">
+                <div class="skill-group"><h3>Languages</h3><ul class="skill-list"><li>Python</li><li>Java</li><li>JavaScript</li><li>HTML &amp; CSS</li></ul></div>
+                <div class="skill-group"><h3>Data and ML</h3><ul class="skill-list"><li>pandas</li><li>NumPy</li><li>scikit-learn</li><li>TensorFlow</li></ul></div>
+                <div class="skill-group"><h3>Building</h3><ul class="skill-list"><li>React Native</li><li>Git &amp; GitHub</li><li>Responsive design</li><li>Data visualization</li></ul></div>
+            </div>
+            <div class="experience-strip">
+                <div><span>Research</span><p>NLP, statistical language patterns, and applied machine learning</p></div>
+                <div><span>Leadership</span><p>FBLA, NHS, tutoring, coding, and community involvement</p></div>
+                <div><span>Beyond school</span><p>Chess, flute, dance, and learning through new challenges</p></div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2 class="section-title">Contact and Links</h2>
-            <p>
-                You can see more of my coding work and follow my future projects on GitHub.
-            </p>
-            <a class="button" href="https://github.com/Krishnapabbu17" target="_blank">Visit My GitHub</a>
+        <section class="contact-section" id="contact">
+            <div><p class="eyebrow">Let’s connect</p><h2>See what I’m building next.</h2><p>My GitHub includes research, data science, mobile development, and All Star Code projects.</p></div>
+            <div class="contact-actions">
+                <a class="button button-light" href="https://github.com/Krishnapabbu17" target="_blank" rel="noopener noreferrer">Open my GitHub</a>
+                <a class="text-link-light" href="https://github.com/Krishnapabbu17/ASCProjects" target="_blank" rel="noopener noreferrer">View All Star Code work <span aria-hidden="true">↗</span></a>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>Created by Krishna Pabbu for All Star Code</p>
-    </footer>
-
+    <footer><p>Designed and built by Krishna Pabbu · <span id="current-year">2026</span></p><a href="#top">Back to top</a></footer>
     <script src="script.js"></script>
 </body>
 </html>
